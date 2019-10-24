@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>velociraptor · Dino-Wiki</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# Velociraptor"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="velociraptor · Dino-Wiki"/><meta property="og:type" content="website"/><meta property="og:url" content="undefined/"/><meta property="og:description" content="# Velociraptor"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/arta.min.css"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/favicon.ico" alt="Dino-Wiki"/><h2 class="headerTitleWithLogo">Dino-Wiki</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/wiki" target="_self">Wiki</a></li><li class=""><a href="/docs/doc4" target="_self">Photos</a></li><li class=""><a href="https://github.com/manuelchacon07/dino-wiki" target="_self">Repository</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Carnívoro</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Carnívoro</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/gigantosaurus">gigantosaurus</a></li><li class="navListItem"><a class="navItem" href="/docs/herrerasaurus">herrerasaurus</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/velociraptor">velociraptor</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">velociraptor</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="velociraptor"></a><a href="#velociraptor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Velociraptor</h1>
+<p><img src="http://4.bp.blogspot.com/-x2qB1Vm4weo/TWSow9xfX7I/AAAAAAAACHI/euqzx--SLAI/s400/velociraptor.jpg" alt="Velociraptor"></p>
+<p>Es un género de dinosaurios terópodos dromeosáuridos que vivieron durante el Campaniano, hacia finales delperíodo Cretácico, hace unos 75 a 71 millones de años, en lo que es hoy Asia. Tradicionalmente sólo se ha reconocido a una especie, V. mongoliensis, cuyos fósiles se han hallado en Asia Central, en Mongolia, pero una segunda especie, V. osmolskae, fue nombrada en 2008 a partir de material craneal procedente de Mongolia Interior, en China.</p>
+<p>Aunque más pequeño que otros dromeosáuridos como el deinonico y el aquilobator, Velociraptor tenía muchos rasgos anatómicos similares a ellos. Fue un carnívoro bípedo, con una cola larga y rígida, y tres garras, una alargada y curva en cada pata, la cual usaba para matar a suspresas. A diferencia de otros dromeosáuridos Velociraptor poseía un cráneo bajo y alargado, y un hocico chato, dirigido hacia arriba. Poseía patas traseras de gran longitud, lo que expresa (al igual que el nombre) su aparente gran velocidad.</p>
+<p>Debido a su destacada aparición en la novela de Michael Crichton Parque Jurásico, el Velociraptor (en la película su nombre está a menudo abreviado en «raptor»/«raptores») es uno de los géneros de dinosaurios más conocidos por el público general. También es bien conocido por lospaleontólogos, con no menos de una docena de esqueletos fósiles desenterrados (la mayor cantidad descubierta de un dromeosáurido). Unespécimen particularmente famoso es el que muestra a un Velociraptor enzarzado en una batalla con un Protoceratops.</p>
+<h2><a class="anchor" aria-hidden="true" id="descripcion22"></a><a href="#descripcion22" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Descripción22</h2>
+<p>El Velociraptor era un pequeño depredador veloz y de un gran poder ofensivo. Todo en él estaba preparado para la caza: sus patas eran las de un corredor nato, sus brazos y manos eran muy eficaces para atrapar y sujetar presas, sus potentes mandíbulas podían dar fuertes dentelladas y sus pies tenían un arma mortal: una enorme garra en forma de hoz en el extremo del segundo dedo de cada pie, de forma que se hincaba más fácilmente en la carne de la víctima.</p>
+<p>En septiembre de 2007, Turner, Makovicky y Norell publican el cúbito (uno de los huesos del brazo) de un Velociraptor hallado en Mongolia que presenta unas protuberancias típicas de la inserción de cañones de plumas. Estas protuberancias en los huesos del ala de las aves muestran donde se sujetan las plumas, y su presencia en Velociraptor indica que también este dinosaurio las tenía. De acuerdo al paleontólogo Alan Turner,</p>
+<p>La carencia de uniones de los cañones no necesariamente significa que un dinosaurio no tuviera plumas. Hallarlas en Velociraptor, sin embargo, significa que definitivamente tenía plumas. Esto es algo que sospechábamos hace tiempo, pero no habíamos sido capaces de comprobarlo.</p>
+<p>Otro de los coautores del trabajo, Mark Norell, conservador a cargo de los reptiles fósiles, anfibios y aves en el Museo Americano de Historia Natural, también comentó su descubrimiento, diciendo lo siguiente:</p>
+<p>Cuanto más aprendemos sobre estos animales, más nos encontramos con que prácticamente no hay diferencia entre las aves y los ​​dinosaurios más estrechamente relacionados con sus ancestros como Velociraptor. Ambos tienen espolones, empollaban sus nidos, poseen huesos huecos y estaban cubiertos de plumas. Si animales como Velociraptor estuvieran vivos hoy nuestra primera impresión sería que no eran más que aves de aspecto muy inusual.</p>
+<p>De acuerdo con Turner, Makovicky y Norell, las protuberancias que sostienen las plumas no se presentan en todas las aves prehistóricas, pero su ausencia no significa que el animal no estuviera emplumado –los flamencos, por ejemplo, carecen de esas protuberancias. Sin embargo, su presencia confirma que Velociraptor tenía plumas alares de aspecto moderno, con un raquis y un vexilo formado por barbas. El espécimen de antebrazo sobre el que las protuberancias fueron halladas (ejemplar número IGM 100/981) representa un animal de 1,5 metros de largo y 15 kilogramos de peso. Basándose en los espacios entre las seis protuberancias preservadas en este espécimen, los autores sugirieron que Velociraptor tenía 14 plumas secundarias (plumas del ala provenientes del antebrazo), comparadas con 12 o más en Archaeopteryx, 18 en Microraptor, y 10 en Rahonavis. Este tipo de variación en el número de plumas del ala entre especies cercanamente relacionadas, es algo esperable según afirman los autores, dado que una variación similar aparece entre las aves modernas.</p>
+<p>Turner y sus colaboradores interpretaron la presencia de plumas en Velociraptor como una prueba en contra de la idea de que los grandes dinosaurios no voladores del taxón Maniraptoraperdieron sus plumas de forma secundaria debido a su mayor tamaño. Más aún, notaron que las protuberancias casi nunca se encuentran en las aves no voladoras actuales, y su presencia enVelociraptor (que debió ser terrestre debido a su relativamente gran tamaño y brazos cortos) es una prueba de que los ancestros de los dromeosáuridos podían volar, lo que haría a Velociraptor y otros miembros de gran tamaño de su familia secundariamente terrestres, aunque es posible que las largas plumas del ala inferidas en los ancestros de Velociraptor tuvieran un propósito distinto al vuelo. La plumas del no volador Velociraptor pueden haber sido usadas para exhibirse, cubrir sus nidos mientas empollaba, o para añadir velocidad e impulso cuando corría hacia arriba en pendientes inclinadas.</p>
+<p>Referencia: <a href="https://es.wikipedia.org/wiki/Velociraptor">Wikipedia</a></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/herrerasaurus"><span class="arrow-prev">← </span><span>herrerasaurus</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 dino wiki machde</section></footer></div></body></html>
